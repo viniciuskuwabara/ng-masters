@@ -1,0 +1,19 @@
+
+.vivo {
+	background-color: black;
+}
+
+.lifetable {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid black;
+}
+
+.lifetable td {
+
+  border: 2px solid black;
+  width: 15px;
+  height: 15px;
+}
