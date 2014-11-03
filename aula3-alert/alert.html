@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Alerts</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+
+  <script src="../lib/angular.js"></script>
+  <script src="../lib/jquery-1.11.0.js"></script>
+  <script src="alert.js"></script>
+  <!-- <script src="base.js"></script> -->
+
+  <script>
+	  angular.module('myapp', ['modAlert']);
+	  angular.module('myapp').controller("MyCtrl", function($scope, alertFactory) {
+			$scope.showAlert = function() {
+				alertFactory.showAlert('Loading...',{timeout: 3000});
+			}
+	  });
+  </script>
+
+</head>
+
+<body ng-app="myapp" ng-controller="MyCtrl">
+
+	<loading> <!-- --></loading>
+<button ng-click="showAlert()"> Mostra Loading</button>
+</body>
+</html>
